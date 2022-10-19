@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="index.js" defer></script>
+    <title>Color Scheme</title>
+</head>
+<body>
+
+    <main class="h-90vh d-flex flex-column justify-center col-5 mx-auto pb-4">
+        <h1 class="title text-blue-royal">Color Scheme</h1>
+        <div class="card col-10">
+            <div class="h-20 d-flex align-items-center p-2 ">
+                <form id="form" class="p-relative col-10 d-flex justify-between">
+                    <input  id="color" type="color" >
+                    <select id="scheme">
+                        <option value="monochrome">monochrome</option>
+                        <option value="monochrome-dark">monochrome-dark</option>
+                        <option value="monochrome-light">monochrome-light</option>
+                        <option value="analogic">analogic</option>
+                        <option value="complement">complement</option>
+                        <option value="analogic-complement">analogic-complement</option>
+                        <option value="triad">triad</option>
+                        <option value="quad">quad</option>
+                    </select>
+                    <button id="btn" type="submit">
+                        <strong>Get color scheme</strong>
+                    </button>
+                </form>
+            </div>
+            <div id="colors" class="bg-gray-light h-80 d-flex"></div>
+        </div>
+    </main>
+    <footer>
+        Gabriel Jiménez <br>
+        03 10 2022
+    </footer>
+</body>
+</html>
